@@ -6,8 +6,9 @@
     <title> Titulo | pagina</title>
 </head>
 <body>
-    <h2><?php echo "hola adentro" ?></h2>
+    <h2><?php echo "hola si es cierto o ne <br>" ?></h2>
 
+    <h1><?php echo "hola perri"?></h1>
      
 </body>
 </html>
