@@ -3,7 +3,7 @@
 $nombre = "uli";    // String
 $edad = 23;         // Integer
 $altura = "1.65";   // Float 
-$activo = true;     // Boleano
+$activo = true;     // Booleano
 $done = null;       // sin valor nulo 
 
 // echo gettype($done);

@@ -11,6 +11,8 @@ $carro_perron="golf";
 
 // tampoco utilizar variables predeterinadas de php como $_GET, $_POST, $_ENV, $COOKIE ETC.
 
+// Las variables pueden cambiar su valor a lo largo del programa.
+
 $NombreCompleto="Golf";
 $edad="1994";
 $ciudad="san felipe";
