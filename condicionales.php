@@ -47,7 +47,7 @@ if($cali<70){
 }elseif ($cali>=70 && $cali<=89) {
     echo "Pasaste con : ".$cali;
 }elseif ($cali<=100) {
-    echo " Eres crak";
+    echo "Eres crak";
 }else{
     echo "Perry";
 };
