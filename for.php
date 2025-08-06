@@ -1,13 +1,12 @@
 <?php
 
-// Quiero imprimir los nombres de mis carritos favoritos 😁
-
+// Lista de mis carritos favoritos 😎
 $carrosFavoritos = ["Nissan", "Mustang", "Camaro", "BMW", "Ferrari"];
 
-echo "Mis carritos chidos son:\n";
+echo "🚗 Mis carritos favoritos son:\n\n";
 
-for ($i = 0; $i < count($carrosFavoritos); $i++) {
-    echo "Carro " . ($i + 1) . ": " . $carrosFavoritos[$i] . "\n";
+foreach ($carrosFavoritos as $indice => $carro) {
+    echo "Carro #" . ($indice + 1) . ": " . $carro . "\n";
 }
 
 ?>
