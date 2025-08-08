@@ -1,38 +1,50 @@
 <?php
-
-
-// Obtener fecha y hora.
+// Zona horaria
 date_default_timezone_set("America/Monterrey");
 
-$fecha_us=date("l d f Y");
-$fecha_us=date("d/m/Y");
+// Función para fecha completa en español
+function fecha_es() {
 
-
-$h_12=date("H:i" );
-
-$fecha_completa=date("d/m/Y - h:i a");
-//echo "la fecha completa es ".$fecha_completa;
-
-
-//  Fecha en español
-
-function fecha_es(){
-    $fecha_dia=date("d");
-    $fecha_mes=date("m");
-    $fecha_year=date("Y");
-
-    $dia_sema = [
-    "Monday"    => "lunes",
-    "Tuesday"   => "martes",
-    "Wednesday" => "miércoles",
-    "Thursday"  => "jueves",
-    "Friday"    => "viernes",
-    "Saturday"  => "sábado",
-    "Sunday"    => "domingo"
+    
+    // Arrays de traducción
+    $dia_semana = [
+        "Monday"    => "lunes",
+        "Tuesday"   => "martes",
+        "Wednesday" => "miércoles",
+        "Thursday"  => "jueves",
+        "Friday"    => "viernes",
+        "Saturday"  => "sábado",
+        "Sunday"    => "domingo"
     ];
-};
+
+    $mes_year = [
+        "January"   => "enero",
+        "February"  => "febrero",
+        "March"     => "marzo",
+        "April"     => "abril",
+        "May"       => "mayo",
+        "June"      => "junio",
+        "July"      => "julio",
+        "August"    => "agosto",
+        "September" => "septiembre",
+        "October"   => "octubre",
+        "November"  => "noviembre",
+        "December"  => "diciembre"
+    ];
+
+    // Obtener valores en inglés
+    $dia_ing = date("l");
+    $mes_ing = date("F");
+    $dia_num = date("d");
+    $anio    = date("Y");
+    $hora    = date("h:i a");
+
+    // Construir fecha en español
+    $fecha_es = $dia_semana[$dia_ing] . " " . $dia_num . " de " . $mes_year[$mes_ing] . " de " . $anio . " - " . $hora;
+
+    return $fecha_es;
+}
+
+// Ejemplo de uso
 echo fecha_es();
-
-
-
 ?>
