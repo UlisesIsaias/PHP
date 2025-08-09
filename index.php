@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Titulo | pagina</title>
-</head>
-<body>
-    <h2><?php echo "hola si es cierto o ne <br>" ?></h2>
+<?php
+// Methodo get envia todo por la url se ven pero se utilizan en el mvc y en las apis
+// Methodo _POST No se ven en la url
+$nombre=$_GET['nombre'];
+$materi=$_GET['materia'];
+$m=$_GET['manzana'];
 
-    <h1><?php echo "hola perri"?></h1>
-     
-</body>
-</html>
+echo $nombre." ".$materi." es ".$m." ".$ape;
