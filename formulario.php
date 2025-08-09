@@ -6,23 +6,27 @@
     <title>Formulario</title>
 </head>
 <body>
-    <form action="./index.php" method="GET">
-        <div>
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"><br><br>
-        </div>
-        <br>
+    <form action="./index.php" method="POST">
+    
         <label for="materia">Asignatura:</label><br>
-        <select id="materia" name="materia">
+        <select id="materia" name="materia[]" multiple> 
             <option value="matematicas">Matemáticas</option>
             <option value="historia">Historia</option>
             <option value="ciencias">Ciencias</option>
         </select><br><br>
 
         <!-- Checkbox -->
-        <label>
-            <input type="checkbox" name="manzana" value="sí">
-            Manzana
+        <label for="op1">
+            <input type="checkbox" name="f[]" id="op1" value="pera">
+            pera
+        </label><br><br>
+        <label for="op2">
+            <input type="checkbox" name="f[]" id="op2" value="manzana">
+            manzana
+        </label><br><br>
+        <label for="op3">
+            <input type="checkbox" name="f[]" id="op3" value="fresa">
+            fresa
         </label><br><br>
 
         <!-- Botón submit -->
