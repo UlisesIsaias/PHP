@@ -1,9 +1,6 @@
 <?php
-
 // pueden llevar array dentro de ellos.
-
 // Arrays escalares array que inicia del 0.
-
 
 /*
  Modificar el valor o mostrar la sintaxix 
